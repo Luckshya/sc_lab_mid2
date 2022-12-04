@@ -43,7 +43,15 @@ int main() {
 	
 	double CoA = numerator/denominator;
 	
-	cout << "CoA = " << CoA;
+	cout << "CoA = " << CoA << "\n";
+	
+	cout << "Crisp set: ";
+	
+	for(auto entry: values) {
+		int x = entry.x;
+		
+		if(x > CoA) cout << x << " ";
+	}
 	
 	return 0;
 }

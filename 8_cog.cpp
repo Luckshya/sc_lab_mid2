@@ -45,7 +45,15 @@ int main() {
 	
 	double CoG = numerator/denominator;
 	
-	cout << "CoG = " << CoG;
+	cout << "CoG = " << CoG << "\n";
+	
+	cout << "Crisp set: ";
+	
+	for(auto entry: values) {
+		int x = entry.x;
+		
+		if(x > CoG) cout << x << " ";
+	}
 	
 	return 0;
 }
